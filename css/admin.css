@@ -1,0 +1,178 @@
+.supportai-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	height: 100%;
+}
+.supportai-home a{
+	color: #079b54;
+}
+.supportai-home a:hover{
+	text-decoration: none;
+}
+.button-supportai {
+    background: #09c269 !important;
+    border: none !important;
+    font-weight: 600;
+    line-height: 38px !important;
+    padding: 0 20px !important;
+    border-radius: 6px !important;
+	transition: all 0.3s ease;
+}
+.button-supportai:hover{
+	background: #079b54 !important;
+}
+.toplevel_page_supportai-menu #wpbody-content {position: relative;height: calc(100vh - 50px);}
+.supportai-home .submit {
+    text-align: center;
+}
+.supportai-home h1 {
+    font-weight: 600;
+    margin-bottom: 20px;
+	margin-top: 20px;
+}
+.supportai-field {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.supportai-field label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.supportai-field .description {
+    text-align: center;
+    margin-top: 12px;
+}
+.toplevel_page_supportai-menu .swal-footer {
+    text-align: center;
+}
+.toplevel_page_supportai-menu .swal-button--confirm {
+    background: #09c269 !important;
+}
+.supportai-field input {
+    padding: 3px 15px;
+    border-radius: 6px;
+}
+.supportai-chatbot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background: #fff;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px 20px;
+}
+.supportai-chatbot:last-child{
+	border-bottom:none;
+}
+.supportai-chatbot img {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+}
+.supportai-chatbot.loading img {
+    width: 100px;
+    height: auto;
+	opacity: 0.3;
+}
+.supportai-chatbot.loading {
+    justify-content: center;
+}
+.supportai-chatbot > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.supportai-chatbots-list {
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+	box-shadow:0 1px 2px 0 rgb(0 0 0 / 5%);
+}
+.loading-results{
+	text-align:center;
+	position:absolute;
+	top:52%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.dot-opacity-loader {
+    width: 100px;
+    border-radius: 100%;
+    position: relative;
+	height: auto;
+    margin: 0 auto 20px;
+}
+.dot-opacity-loader span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #2e16e6;
+    margin: 0 5px;
+    opacity: 0;
+}
+.dot-opacity-loader span:nth-child(1) {
+    -webkit-animation: opacitychange 1s ease-in-out infinite;
+    animation: opacitychange 1s ease-in-out infinite;
+}
+.dot-opacity-loader span:nth-child(2) {
+    -webkit-animation: opacitychange 1s ease-in-out 0.33s infinite;
+    animation: opacitychange 1s ease-in-out 0.33s infinite;
+}
+.dot-opacity-loader span:nth-child(3) {
+    -webkit-animation: opacitychange 1s ease-in-out 0.66s infinite;
+    animation: opacitychange 1s ease-in-out 0.66s infinite;
+}
+@keyframes opacitychange{
+    0%, 100%{
+        opacity: 0;
+    }
+
+    60%{
+        opacity: 1;
+    }
+}
+.button-supportai.integrate-button, .button-supportai.remove-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 38px;
+}
+.swal-text {
+    text-align: center !important;
+}
+.swal-button--confirm{
+	background: #2e16e6 !important
+}
+.swal-icon{
+	margin-bottom: 0 !important;
+}
+.swal-footer {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+.button-supportai.remove-button {
+    background: #F0D0D4 !important;
+    color: #8E3741 !important;
+    min-width: 98px;
+}
+#supportai_key_submit .supportai-field {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.success-toast {
+    background: #fff;
+    color: #2f8e21;
+    box-shadow: 0 3px 6px -1px rgba(0,0,0,.12), 0 10px 36px -4px rgb(77 232 100 / 33%);
+}
+.error-toast {
+    background: #fff;
+    color: #a74e4e;
+    box-shadow: 0 3px 6px -1px rgba(0,0,0,.12), 0 10px 36px -4px rgb(232 77 77 / 64%);
+}
